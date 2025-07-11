@@ -1,3 +1,5 @@
+# This program create a sample Sodoku table
+
 import numpy as np
 import random
 
