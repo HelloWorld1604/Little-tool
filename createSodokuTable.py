@@ -66,6 +66,7 @@ def fill_grids(num):
 
 
 # setting sodoku's table
+# table's size: 9x9
 # where 0 are that numbers can be filled
 table = np.array([
    [0,0,0,0,0,0,0,0,0],
