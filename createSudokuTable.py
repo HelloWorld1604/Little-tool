@@ -5,7 +5,7 @@ import random
 def find_start_point(x, y):
     return [x//3*3, y//3*3]
 
-# check n in 4 directions
+# check n in 4 directions and 3x3 grid
 def is_valid(num, x, y):
     
     #check colunm
