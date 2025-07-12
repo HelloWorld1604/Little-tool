@@ -6,7 +6,7 @@ def find_start_point(x, y):
     return [x//3*3, y//3*3]
 
 # check n in 4 directions
-def check_four_directions(num, x, y):
+def is_valid(num, x, y):
     
     #check colunm
     for pos_col in range(0,9):
@@ -51,7 +51,7 @@ def solve():
                 nums = list(range(1, 10))
                 random.shuffle(nums)
                 for n in nums:
-                    if check_four_directions(n, i, j):
+                    if is_valid(n, i, j):
                         table[i][j] = n
                         if solve():
                             return True
